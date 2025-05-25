@@ -20,6 +20,7 @@ vim.api.nvim_create_autocmd('BufReadPost', {
   end,
 })
 
+-- golang indentation
 vim.api.nvim_create_autocmd('FileType', {
   pattern = 'go',
   callback = function()
