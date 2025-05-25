@@ -41,6 +41,7 @@ require('lazy').setup({
   require 'plugins/lsp',
   require 'plugins/autocompletion',
   require 'plugins/highlight',
+  require 'plugins/comments',
   require 'plugins/mini',
   require 'plugins/treesitter',
   require 'plugins/lint',
