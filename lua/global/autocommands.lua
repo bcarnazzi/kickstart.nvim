@@ -29,3 +29,10 @@ vim.api.nvim_create_autocmd('FileType', {
     vim.bo.expandtab = false
   end,
 })
+
+-- Start terminal mode when terminal buffer open.
+vim.api.nvim_create_autocmd('TermOpen', {
+  callback = function()
+    vim.cmd 'startinsert!'
+  end,
+})
