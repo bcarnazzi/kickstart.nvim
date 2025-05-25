@@ -120,6 +120,16 @@ return {
       },
     }
 
+    dap.configurations.go = {
+      {
+        type = 'delve',
+        name = 'file',
+        request = 'launch',
+        program = '${file}',
+        outputMode = 'remote',
+      },
+    }
+
     -- Change breakpoint icons
     -- vim.api.nvim_set_hl(0, 'DapBreak', { fg = '#e51400' })
     -- vim.api.nvim_set_hl(0, 'DapStop', { fg = '#ffcc00' })
