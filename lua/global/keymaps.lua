@@ -36,9 +36,6 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
--- oil mimic vim-vinegar
-vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
-
 -- Quick terminal
 -- Créer un split horizontal de 10 lignes + terminal
 vim.api.nvim_create_user_command('Term', function()
