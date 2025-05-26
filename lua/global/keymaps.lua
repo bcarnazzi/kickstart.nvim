@@ -38,3 +38,12 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 
 -- oil mimic vim-vinegar
 vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'Open parent directory' })
+
+-- Quick terminal
+-- Créer un split horizontal de 10 lignes + terminal
+vim.api.nvim_create_user_command('Term', function()
+  vim.cmd '14split | terminal' -- Split + terminal
+  vim.cmd 'startinsert' -- Mode insertion automatique
+end, {})
+
+vim.keymap.set('n', '<leader>tt', ':Term<CR>', { noremap = true, silent = true })
