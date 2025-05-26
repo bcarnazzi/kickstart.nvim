@@ -25,28 +25,7 @@ rtp:prepend(lazypath)
 -- [[ Configure and install plugins ]]
 -- NOTE: Here is where you install your plugins.
 require('lazy').setup({
-  -- For additional information with loading, sourcing and examples see `:help lazy.nvim-🔌-plugin-spec`
-  -- Or use telescope!
-  -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
-  -- you can continue same window with `<space>sr` which resumes last telescope search
-  require 'plugins/theme',
-  require 'plugins/keybinds',
-  require 'plugins/autoindent',
-  require 'plugins/git',
-  require 'plugins/markdown',
-  require 'plugins/fuzzy',
-  require 'plugins/autoformat',
-  require 'plugins/autopairs',
-  require 'plugins/indent_line',
-  require 'plugins/lsp',
-  require 'plugins/autocompletion',
-  require 'plugins/highlight',
-  require 'plugins/comments',
-  require 'plugins/mini',
-  require 'plugins/treesitter',
-  require 'plugins/lint',
-  require 'plugins/trouble',
-  require 'plugins/debug',
+  { import = 'plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
@@ -68,6 +47,8 @@ require('lazy').setup({
     },
   },
 })
+
+require('oil').setup()
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
