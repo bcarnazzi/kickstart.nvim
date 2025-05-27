@@ -18,4 +18,5 @@ return {
   keys = {
     { '<leader>gg', '<cmd>LazyGitCurrentFile<cr>', desc = 'LazyGit' },
   },
+  enabled = false,
 }

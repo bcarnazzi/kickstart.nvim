@@ -44,3 +44,4 @@ vim.api.nvim_create_user_command('Term', function()
 end, {})
 
 vim.keymap.set('n', '<leader>gt', ':Term<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>gg', ':Neogit<CR>', { noremap = true, silent = true })
