@@ -30,6 +30,16 @@ vim.api.nvim_create_autocmd('FileType', {
   end,
 })
 
+-- lua indentation
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = 'lua',
+  callback = function()
+    vim.bo.tabstop = 2
+    vim.bo.shiftwidth = 2
+    vim.bo.expandtab = true
+  end,
+})
+
 -- Start terminal mode when terminal buffer open.
 vim.api.nvim_create_autocmd('TermOpen', {
   callback = function()
