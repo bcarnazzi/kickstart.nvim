@@ -1,11 +1,11 @@
 -- [[ Basic Options ]]
-require 'global/options'
+require 'config/options'
 
 -- [[ Basic Keymaps ]]
-require 'global/keymaps'
+require 'config/keymaps'
 
 -- [[ Basic Autocommands ]]
-require 'global/autocommands'
+require 'config/autocommands'
 
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
