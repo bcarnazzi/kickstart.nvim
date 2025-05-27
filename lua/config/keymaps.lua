@@ -43,4 +43,4 @@ vim.api.nvim_create_user_command('Term', function()
   vim.cmd 'startinsert' -- Mode insertion automatique
 end, {})
 
-vim.keymap.set('n', '<leader>tt', ':Term<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>gt', ':Term<CR>', { noremap = true, silent = true })
