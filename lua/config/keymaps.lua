@@ -44,7 +44,7 @@ vim.api.nvim_create_user_command('Term', function()
 end, {})
 
 vim.keymap.set('n', '<leader>gt', ':Term<CR>', { noremap = true, silent = true })
-vim.keymap.set('n', '<leader>gg', ':Neogit kind=replace<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>gg', ':Neogit kind=replace cwd=%:p:h<CR>', { noremap = true, silent = true })
 
 -- Change working directory
 vim.api.nvim_create_user_command('Cwd', function()
