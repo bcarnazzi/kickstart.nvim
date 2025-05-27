@@ -5,6 +5,9 @@ return {
     -- Better comments
     require('mini.comment').setup()
 
+    -- Mini autopair
+    require('mini.pairs').setup()
+
     -- local ai = require 'mini.ai'
     -- Better Around/Inside textobjects
     --
