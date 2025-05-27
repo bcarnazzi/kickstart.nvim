@@ -8,6 +8,11 @@ return {
     -- Mini autopair
     require('mini.pairs').setup()
 
+    -- Mini indentation scope
+    require('mini.indentscope').setup {
+      symbol = '│',
+    }
+
     -- local ai = require 'mini.ai'
     -- Better Around/Inside textobjects
     --
