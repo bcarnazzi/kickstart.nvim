@@ -2,6 +2,9 @@
 return {
   'echasnovski/mini.nvim',
   config = function()
+    -- Better comments
+    require('mini.comment').setup()
+
     -- local ai = require 'mini.ai'
     -- Better Around/Inside textobjects
     --
