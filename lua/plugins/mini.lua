@@ -46,6 +46,9 @@ return {
       },
     }
 
+    -- Mini Animations
+    require('mini.animate').setup()
+
     -- local ai = require 'mini.ai'
     -- Better Around/Inside textobjects
     --
