@@ -2,19 +2,19 @@
 return {
   'echasnovski/mini.nvim',
   config = function()
-    -- Better comments
+    -- Better comments OK
     require('mini.comment').setup()
 
-    -- Mini autopair
+    -- Mini autopair OK
     require('mini.pairs').setup()
 
-    -- Mini indentation scope
+    -- Mini indentation scope OK
     require('mini.indentscope').setup {
       symbol = '│',
       draw = { animation = require('mini.indentscope').gen_animation.none() },
     }
 
-    -- Mini highlighter
+    -- Mini highlighter OK
     require('mini.hipatterns').setup {
       highlighters = {
         -- Highlight standalone 'FIXME', 'HACK', 'TODO', 'NOTE'
@@ -28,7 +28,7 @@ return {
       },
     }
 
-    -- Mini diff
+    -- Mini diff OK
     require('mini.diff').setup {
       -- Options for how hunks are visualized
       view = {
@@ -46,11 +46,10 @@ return {
       },
     }
 
-    -- Mini Animations
+    -- Mini Animations OK
     require('mini.animate').setup()
 
-    -- local ai = require 'mini.ai'
-    -- Better Around/Inside textobjects
+    -- Better Around/Inside textobjects OK
     --
     -- Examples:
     --  - va)  - [V]isually select [A]round [)]paren
@@ -58,22 +57,6 @@ return {
     --  - ci'  - [C]hange [I]nside [']quote
     require('mini.ai').setup {
       n_lines = 500,
-      -- custom_textobjects = {
-      --   o = ai.gen_spec.treesitter { -- code block
-      --     a = { '@block.outer', '@conditional.outer', '@loop.outer' },
-      --     i = { '@block.inner', '@conditional.inner', '@loop.inner' },
-      --   },
-      --   f = ai.gen_spec.treesitter { a = '@function.outer', i = '@function.inner' }, -- function
-      --   c = ai.gen_spec.treesitter { a = '@class.outer', i = '@class.inner' }, -- class
-      --   t = { '<([%p%w]-)%f[^<%w][^<>]->.-</%1>', '^<.->().*()</[^/]->$' }, -- tags
-      --   d = { '%f[%d]%d+' }, -- digits
-      --   e = { -- Word with case
-      --     { '%u[%l%d]+%f[^%l%d]', '%f[%S][%l%d]+%f[^%l%d]', '%f[%P][%l%d]+%f[^%l%d]', '^[%l%d]+%f[^%l%d]' },
-      --     '^().*()$',
-      --   },
-      --   u = ai.gen_spec.function_call(), -- u for "Usage"
-      --   U = ai.gen_spec.function_call { name_pattern = '[%w_]' }, -- without dot in function name
-      -- },
     }
 
     -- Add/delete/replace surroundings (brackets, quotes, etc.)
